@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Literata', serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.header .main-logo {
+  display: inline-block;
+  width: 260px;
+  height: 135px;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px auto 0;
+  max-width: 950px;
+  width: 100%;
+  position: relative;
+}
+
+.header .nav .nav__list {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+}
+
+.header .nav .nav__list .nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.header .nav .nav__list .nav__link .nav__item {
+  display: inline-block;
+  font-family: 'Old Standard TT', serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .nav .nav__list .nav__link .nav__item:hover {
+  border-bottom: 2px solid #000;
+  -webkit-transition: 0.05s;
+  transition: 0.05s;
+}
+
+.header .nav .nav__list-left li {
+  margin-right: 28px;
+}
+
+.header .nav .nav__list-right li {
+  margin-left: 28px;
+}
+
+.footer {
+  height: 350px;
+  background-color: #aeaeae;
+}
+
+.footer .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+}
+
+.footer .footer__inner .main-logo {
+  margin: auto;
+}
+
+.footer .footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__text p {
+  margin: 0 auto 10px;
+}
+
+.footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 180px;
+}
+
+.footer .footer__social .footer__link {
+  margin-right: 3px;
+  padding: 3px;
+  color: #000;
+}
+
+.footer .social-icon {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid #000;
+  fill: currentColor;
+}
+
+.footer .social-icon:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+/*# sourceMappingURL=main-page.css.map */

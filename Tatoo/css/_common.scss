@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Literata', serif;
+}
+
+// header
+.header {
+  display: flex;
+  width: 100%;
+  height: 500px;
+
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+
+  position: relative;
+
+  .main-logo {
+    display: inline-block;
+    width: 260px;
+    height: 135px;
+
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 0;
+    max-width: 950px;
+    width: 100%;
+
+    position: relative;
+
+    .nav__list {
+      display: inline-block;
+      padding: 0;
+
+      list-style: none;
+
+      .nav__link {
+        color: #000;
+        text-decoration: none;
+
+        .nav__item {
+          display: inline-block;
+
+          font-family: 'Old Standard TT', serif;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          &:hover {
+            border-bottom: 2px solid #000;
+
+            transition: 0.05s;
+          }
+        }
+      }
+    }
+
+    .nav__list-left li {
+      margin-right: 28px;
+    }
+
+    .nav__list-right li {
+      margin-left: 28px;
+    }
+  }
+}
+
+// footer
+.footer {
+  height: 350px;
+
+  background-color: #aeaeae;
+
+  .footer__inner {
+    display: flex;
+    height: 250px;
+
+    .main-logo {
+
+      margin: auto;
+    }
+  }
+
+  .footer__text {
+    display: flex;
+    
+    p {
+      margin: 0 auto 10px;
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 180px;
+
+    .footer__link {
+      margin-right: 3px;
+      padding: 3px;
+      color: #000;
+    }
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #000;
+
+    fill: currentColor;
+
+    &:hover {
+      color: #fff;
+      border: 2px solid #fff;
+
+      transition: 0.1s;
+    }
+  }
+}
