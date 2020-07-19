@@ -193,4 +193,8 @@ body {
 .about .about__right .about__text {
   width: 600px;
 }
+
+.about .about__right .about__text:last-child {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=main-page.css.map */

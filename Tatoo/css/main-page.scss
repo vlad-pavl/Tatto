@@ -35,6 +35,9 @@
       }
       .about__text {
          width: 600px;
+         &:last-child {
+            margin-bottom: 30px;
+         }
       }
    }
 }
