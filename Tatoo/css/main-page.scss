@@ -1,1 +1,40 @@
 @import 'common';
+
+.section__title {
+   margin: auto;
+   padding: 27px 50px;
+
+   border: 10px solid #000;
+   &:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+   }
+}
+// about
+.about {
+   display: flex;
+   height: 500px;
+   width: 100%;
+   .about__left {
+      display: flex;
+      width: 50%;
+
+      background-image: url(../img/about/about.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+   }
+   .about__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      width: 50%;
+      &:before {
+         content: url(../img/about/about-logo.png);
+      }
+      .about__text {
+         width: 600px;
+      }
+   }
+}
