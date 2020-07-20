@@ -245,10 +245,7 @@ body {
 
 .about__studio .studio-row .studio-cell {
   width: 100%;
-}
-
-.about__studio .studio-row .studio-cell:hover {
-  background-color: #fff;
+  position: relative;
 }
 
 .about__studio .studio-row .studio-cell:hover .studio-img {
@@ -257,9 +254,23 @@ body {
   transition: 0.2s;
 }
 
+.about__studio .studio-row .studio-cell:hover .studio-zoom {
+  visibility: visible;
+}
+
 .about__studio .studio-row .studio-cell .studio-img {
   display: block;
   width: 100%;
+}
+
+.about__studio .studio-row .studio-cell .studio-zoom {
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .testimonials {
