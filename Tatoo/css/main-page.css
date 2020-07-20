@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Literata', serif;
+  font-family: "Literata";
 }
 
 .header {
@@ -40,6 +40,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 60px auto 0;
   max-width: 950px;
   width: 100%;
@@ -141,20 +143,42 @@ body {
   margin: auto;
   padding: 27px 50px;
   border: 10px solid #000;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-.section__title:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 .about__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
   width: 100%;
 }
 
@@ -187,14 +211,21 @@ body {
 
 .about__inner .about__right:before {
   content: url("../img/about/about-inner/about-logo.png");
+  position: relative;
+  top: 32px;
+  left: 0;
 }
 
 .about__inner .about__right .about__text {
-  width: 600px;
-}
-
-.about__inner .about__right .about__text:last-child {
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 600px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 42px 0;
+  padding: 0 10px;
+  font-size: 16px;
 }
 
 .about__studio {
@@ -218,15 +249,16 @@ body {
 }
 
 .about__studio .studio-row .studio-cell:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #fff;
 }
 
 .about__studio .studio-row .studio-cell .studio-img {
   display: block;
   width: 100%;
+}
+
+.about__studio .studio-row .studio-cell .studio-img:hover {
+  opacity: 0.6;
 }
 
 .testimonials {
@@ -237,21 +269,31 @@ body {
   width: 100%;
   background-image: url("../img/testimonials/testimonials-bg.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .testimonials .testimonials__item {
   width: 870px;
   margin: auto;
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   font-style: italic;
   font-weight: bold;
   text-align: center;
-  position: relative;
 }
 
 .testimonials .testimonials__item .testimonials__name {
   position: absolute;
-  right: 5%;
+  bottom: 5%;
+  right: 25%;
+}
+
+.testimonials .testimonials__item .testimonials__name::before {
+  content: " - ";
+}
+
+.testimonials .testimonials__item .testimonials__name::after {
+  content: " - ";
 }
 /*# sourceMappingURL=main-page.css.map */

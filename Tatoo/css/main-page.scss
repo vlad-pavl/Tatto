@@ -1,20 +1,30 @@
 @import 'common';
 
+// title
 .section__title {
    margin:  auto;
    padding: 27px 50px;
 
    border: 10px solid #000;
-   &:hover {
-      transform: scale(1.1);
-      transition: 0.5s;
+   animation-name: scale;
+   animation-duration: 3s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+
+// animation
+@keyframes scale {
+   0% {
+      transform: scale(1.0);;
+   }
+   100% {
+      transform: scale(1.2);
    }
 }
 
 // about
 .about__inner {
    display: flex;
-   height: 500px;
    width: 100%;
   
    .about__left {
@@ -35,13 +45,22 @@
       width: 50%;
       &:before {
          content: url("../img/about/about-inner/about-logo.png");
+         // margin-bottom: 20px;
+
+         position: relative;
+         top: 32px;
+         left: 0;
       }
      
       .about__text {
-         width: 600px;
-         &:last-child {
-            margin-bottom: 30px;
-         }
+         display: flex;
+         max-width: 600px;
+         flex-wrap: wrap;
+
+         margin: 42px 0;
+         padding: 0 10px;
+
+         font-size: 16px;
       }
    }
 }
@@ -58,12 +77,14 @@
          width: 100%;
          background-color: #000;
          &:hover {
-            transform: scale(1.1);
-            transition: 0.5s;
+            background-color: #fff;
          }
          .studio-img {
             display: block;
             width: 100%;
+            &:hover {
+               opacity: 0.6;
+            }
          }
       }
    }
@@ -78,21 +99,30 @@
    background-image: url("../img/testimonials/testimonials-bg.jpg");
    background-size: cover;
 
+   position: relative;
+
    .testimonials__item {
       width: 870px;
       margin: auto;
 
       color: #fff;
+      font-family: 'Times New Roman', Times, serif;
       font-size: 24px;
       font-style: italic;
       font-weight: bold;
       text-align: center;
 
-      position: relative;
-
       .testimonials__name {
          position: absolute;
-         right: 5%;
+         bottom: 5%;
+         right: 25%;
+         &::before {
+            content: " - ";
+         }
+         &::after {
+            content: " - ";
+
+         }
       }
    }
 }
