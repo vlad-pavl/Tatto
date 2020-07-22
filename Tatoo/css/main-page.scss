@@ -119,29 +119,29 @@
 // testimonials
 .testimonials {
    display: flex;
-   height: 350px;
    width: 100%;
 
    background-image: url("../img/testimonials/testimonials-bg.jpg");
    background-size: cover;
 
-   position: relative;
-
    .testimonials__item {
-      width: 870px;
+      width: 743px;
       margin: auto;
 
-      color: #fff;
+      color: #f2efe5;
       font-family: 'Times New Roman', Times, serif;
       font-size: 24px;
       font-style: italic;
       font-weight: bold;
       text-align: center;
 
+      .testimonials__text {
+         margin-top: 157px;
+      }
+
       .testimonials__name {
-         position: absolute;
-         bottom: 5%;
-         right: 25%;
+         margin: 67px 0 51px 0;
+         text-align: right;
 
          &::before {
             content: " - ";
@@ -278,6 +278,37 @@
                transition: 0.2s;
             }
          }
+      }
+   }
+}
+
+// twitter
+.twitter {
+   display: flex;
+   width: 100%;
+
+   background-image: url("../img/twitter/twitter-bg.jpg");
+   background-size: cover;
+
+   .twitter__item {
+      width: 907px;
+      margin: auto;
+
+      .twitter__logo {
+         text-align: center;
+
+         margin: 107px 0 32px 0;
+      }
+
+      .twitter__text {
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 22px;
+         font-weight: bold;
+         font-style: italic;
+         line-height: 22px;
+         color: #f2efe5;
+
+         margin-bottom: 119px;
       }
    }
 }

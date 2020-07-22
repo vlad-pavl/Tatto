@@ -283,17 +283,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 350px;
   width: 100%;
   background-image: url("../img/testimonials/testimonials-bg.jpg");
   background-size: cover;
-  position: relative;
 }
 
 .testimonials .testimonials__item {
-  width: 870px;
+  width: 743px;
   margin: auto;
-  color: #fff;
+  color: #f2efe5;
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   font-style: italic;
@@ -301,10 +299,13 @@ body {
   text-align: center;
 }
 
+.testimonials .testimonials__item .testimonials__text {
+  margin-top: 157px;
+}
+
 .testimonials .testimonials__item .testimonials__name {
-  position: absolute;
-  bottom: 5%;
-  right: 25%;
+  margin: 67px 0 51px 0;
+  text-align: right;
 }
 
 .testimonials .testimonials__item .testimonials__name::before {
@@ -444,5 +445,34 @@ body {
   opacity: 0.6;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-image: url("../img/twitter/twitter-bg.jpg");
+  background-size: cover;
+}
+
+.twitter .twitter__item {
+  width: 907px;
+  margin: auto;
+}
+
+.twitter .twitter__item .twitter__logo {
+  text-align: center;
+  margin: 107px 0 32px 0;
+}
+
+.twitter .twitter__item .twitter__text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 22px;
+  color: #f2efe5;
+  margin-bottom: 119px;
 }
 /*# sourceMappingURL=main-page.css.map */
