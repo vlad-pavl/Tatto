@@ -359,7 +359,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("../img/team/bg-title.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .team .team__img {
