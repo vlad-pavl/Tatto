@@ -20,29 +20,25 @@ body {
   background-size: cover;
   background-position: 50% 50%;
 
-  position: relative;
-
-  .main-logo {
-    display: inline-block;
-    width: 260px;
-    height: 135px;
-
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%);
-  }
-
   .nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
     margin: 60px auto 0;
-    max-width: 950px;
+    padding: 0 10px;
+    max-width: 1000px;
     width: 100%;
 
-    position: relative;
+    .main-logo {
+      display: inline-block;
+      width: 280px;
+      height: 155px;
+      padding: 10px;
+  
+      position: relative;
+      top: -10%;
+    }
 
     .nav__list {
       display: inline-block;
@@ -118,7 +114,7 @@ body {
     }
   }
 
-  .social-icon {
+  .social-icon-footer {
     width: 35px;
     height: 35px;
     padding: 5px;
