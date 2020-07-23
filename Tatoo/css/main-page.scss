@@ -3,6 +3,7 @@
 // title
 .section__title {
    max-width: 250px;
+   width: 100%;
    margin: auto;
    padding: 27px 50px;
 
@@ -14,6 +15,44 @@
    animation-iteration-count: infinite;
 
    cursor: default;
+}
+
+// mixin
+@mixin grid {
+   
+   .grid-container {
+      display: grid;
+      
+      .grid-item {
+         position: relative;
+         
+         &:hover .grid-img {
+            opacity: 0.6;
+
+            transition: 0.2s;
+         }
+
+         &:hover .grid-zoom {
+            visibility: visible;
+         }
+         
+         .grid-zoom {
+            display: inline-block;
+
+            visibility: hidden;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+         }
+
+         .grid-img {
+            display: block;
+            width: 100%;
+         }
+      }
+   }
 }
 
 // animation
@@ -75,44 +114,12 @@
 }
 
 .about__studio {
+   @include grid;
    width: 100%;
-
-   .studio-row {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-
-      .studio-cell {
-         width: 100%;
-
-         position: relative;
-
-         &:hover .studio-img {
-            opacity: 0.6;
-
-            transition: 0.2s;
-         }
-
-         &:hover .studio-zoom {
-            visibility: visible;
-         }
-
-         .studio-img {
-            display: block;
-            width: 100%;
-         }
-
-         .studio-zoom {
-            display: inline-block;
-
-            visibility: hidden;
-
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%);
-         }
-      }
+   
+   .grid-container {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
    }
 }
 
@@ -309,6 +316,29 @@
          color: #f2efe5;
 
          margin-bottom: 119px;
+      }
+   }
+}
+
+// gallery
+.gallery {
+   @include grid;
+   width: 100%;
+
+   .grid-container {
+      grid-template-rows: 1fr 1fr 1fr 1fr ;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      
+      .grid-item.grid-item-title {
+         display: flex;
+         grid-column-start: 1;
+         grid-column-end: 3;
+
+         background-color: #afac9c;
+         
+         .gallery__title {
+            margin: auto;
+         }
       }
    }
 }
