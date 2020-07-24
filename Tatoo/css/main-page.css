@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -170,6 +171,12 @@ body {
 .social-icon .social-item {
   max-width: 32px;
   max-height: 33px;
+  color: #000;
+  fill: currentColor;
+}
+
+.social-icon .social-item:hover {
+  color: #3ac9e8;
 }
 
 @-webkit-keyframes scale {
@@ -322,6 +329,21 @@ body {
 
 .testimonials .testimonials__item .testimonials__text {
   margin-top: 155px;
+  position: relative;
+}
+
+.testimonials .testimonials__item .testimonials__text::before {
+  content: url("../img/testimonials/“.png");
+  position: absolute;
+  left: -7%;
+  top: -67%;
+}
+
+.testimonials .testimonials__item .testimonials__text::after {
+  content: url("../img/testimonials/hhh.png");
+  position: absolute;
+  right: -7%;
+  top: 90%;
 }
 
 .testimonials .testimonials__item .testimonials__name {

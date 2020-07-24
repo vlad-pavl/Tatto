@@ -29,6 +29,13 @@
    .social-item {
       max-width: 32px;
       max-height: 33px;
+      color: #000;
+
+      fill: currentColor;
+
+      &:hover {
+         color: #3ac9e8;
+      }
    }
 }
 
@@ -164,6 +171,23 @@
 
       .testimonials__text {
          margin-top: 155px;
+         position: relative;
+         
+         &::before {
+            content: url("../img/testimonials/“.png");
+      
+            position: absolute;
+            left: -7%;
+            top: -67%;
+         }
+        
+         &::after {
+            content: url("../img/testimonials/hhh.png");
+      
+            position: absolute;
+            right: -7%;
+            top: 90%;
+         }
       }
 
       .testimonials__name {
@@ -285,6 +309,7 @@
             border: none;
 
             cursor: pointer;
+            
             &:hover {
                opacity: 0.6;
 
@@ -438,6 +463,7 @@
                border: none;
 
                cursor: pointer;
+               
                &:hover {
                   opacity: 50%;
 
@@ -459,4 +485,5 @@
       height: 100%;
    }
 }
+
 
