@@ -130,3 +130,23 @@ body {
     }
   }
 }
+
+// media
+@media (max-width: 975px) {
+  
+  // header
+  .header {
+    position: relative;
+    .nav {
+      padding: 0 5px;
+      
+      .main-logo {
+        // width: 200px;
+        // height: 125px;
+        // padding: 5px;
+
+        position: absolute;
+      }
+    }
+  }
+}
