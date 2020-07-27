@@ -20,7 +20,7 @@
    <!-- header -->
    <header class="header">
       <nav class="nav">
-         <ul class="nav__list nav__list-left">
+         <ul class="nav__list">
             <a class="nav__link" href="#">
                <li class="nav__item active">Главная</li>
             </a>
@@ -30,9 +30,7 @@
             <a class="nav__link" href="#">
                <li class="nav__item">Галерея</li>
             </a>
-         </ul>
-         <img class="main-logo" src="./img/Ink Tattoo Logo.png" alt="Logo">
-         <ul class="nav__list nav__list-right">
+            <img class="main-logo" src="./img/Ink Tattoo Logo.png" alt="Logo">
             <a class="nav__link" href="#">
                <li class="nav__item">Контакты</li>
             </a>
@@ -44,6 +42,10 @@
             </a>
          </ul>
       </nav>
+      <button class="burger" type="button">
+         <span class="burger__item">Menu</span>
+      </button>
+      <img class="burger-logo" src="./img/Ink Tattoo Logo.png" alt="Logo">
    </header>
 
    <!-- about -->
@@ -169,7 +171,7 @@
    <section class="team">
       <div class="team__item" id="team-title">
          <div class="team__title">
-            <div class="team__wrapper">
+            <div class="title__wrapper">
                <h2 class="section__title">Команда</h2>
             </div>
          </div>
@@ -501,7 +503,7 @@
                   Подписывайтесь на наши новости
                </p>
                <input class="form-email" type="email" placeholder="ВВЕДИТЕ ЕМЕИЛ">
-               <button class="form__button" type="submit">Отправить</button>
+               <button class="form-button" type="submit">Отправить</button>
             </form>
          </div>
       </div>
@@ -523,7 +525,7 @@
    <section class="gallery">
       <div class="grid-container">
          <div class="grid-item grid-item-title">
-            <div class="gallery__title">
+            <div class="title__wrapper">
                <h2 class="section__title">Галерея</h2>
             </div>
          </div>
@@ -642,7 +644,7 @@
    <section class="contact">
       <div class="contact__inner">
          <div class="contact__info">
-            <div class="contact__title">
+            <div class="title__wrapper">
                <h2 class="section__title">Контакты</h2>
             </div>
             <p class="contact__text">
