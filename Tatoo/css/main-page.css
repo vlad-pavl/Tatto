@@ -474,10 +474,7 @@ body {
   width: 2em;
   height: 2em;
   border-radius: 100%;
-  outline: none;
   background: #fff;
-  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
-          box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
   outline: none;
   border: none;
   -webkit-transition: 0.3s;
@@ -497,8 +494,6 @@ body {
   height: 10%;
   margin: auto;
   background: #000;
-  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
-          box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -513,6 +508,11 @@ body {
   left: 15%;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
+}
+
+.testimonials .testimonials-container .testimonials-btn .btn:disabled {
+  background: #9b977a;
+  cursor: default;
 }
 
 .testimonials .testimonials-container .testimonials-btn .btn-prev {
