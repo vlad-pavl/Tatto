@@ -401,12 +401,12 @@ body {
 }
 
 .testimonials .testimonials-container .testimonials-track {
-  padding: 10px;
-  max-width: 900px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -415,16 +415,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.testimonials .testimonials-container .testimonials-track .testimonials-item .item-wrapper {
-  max-width: 743px;
   margin: auto;
-  padding: 10px;
+  width: 100%;
+  padding: 0 70px;
   color: #f2efe5;
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
@@ -858,10 +853,10 @@ body {
   .testimonials .testimonials-container .testimonials-track {
     max-width: 650px;
   }
-  .testimonials .testimonials-container .testimonials-track .testimonials-item .item-wrapper .testimonials-text::before {
+  .testimonials .testimonials-container .testimonials-track .testimonials-item .testimonials-text::before {
     left: 0;
   }
-  .testimonials .testimonials-container .testimonials-track .testimonials-item .item-wrapper .testimonials-text::after {
+  .testimonials .testimonials-container .testimonials-track .testimonials-item .testimonials-text::after {
     right: 0;
   }
   .team {
@@ -1071,7 +1066,7 @@ body {
     width: 100%;
   }
   .testimonials .testimonials-container .testimonials-track {
-    max-width: 350px;
+    max-width: 450px;
   }
   .twitter .twitter__item .twitter__text {
     font-size: 16px;

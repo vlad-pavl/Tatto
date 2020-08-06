@@ -170,30 +170,28 @@
       overflow: hidden;
 
       .testimonials-track {
+         display: flex;
          padding: 10px;
          max-width: 900px;
          margin: auto;
-         display: flex;
-      
+
          transition: 0.5s;
 
          .testimonials-item {
             display: flex;
+            flex-shrink: 0;
             margin: auto;
             width: 100%;
-            flex-shrink: 0;
+            padding: 0 70px;
+
+            color: #f2efe5;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
 
             .item-wrapper {
-               max-width: 743px;
-               margin: auto;
-               padding: 10px;
-
-               color: #f2efe5;
-               font-family: 'Times New Roman', Times, serif;
-               font-size: 24px;
-               font-style: italic;
-               font-weight: bold;
-               text-align: center;
 
                .testimonials-text {
                   margin-top: 155px;
@@ -205,14 +203,14 @@
                      position: absolute;
                      left: -54px;
                      top: -42px;
-                   }
+                  }
 
                   &::after {
                      content: url("../img/testimonials/hhh.png");
                      position: absolute;
                      right: -52px;
                      bottom: -45px;
-                   }
+                  }
                }
 
                .testimonials-name {
@@ -228,6 +226,7 @@
             }
          }
       }
+
       .testimonials-btn {
          position: absolute;
          left: 50%;
@@ -238,48 +237,48 @@
             display: inline-block;
             width: 2em;
             height: 2em;
-         
+
             border-radius: 100%;
             background: #fff;
             outline: none;
             border: none;
             transition: 0.3s;
             cursor: pointer;
-         
+
             position: relative;
             z-index: 1;
 
             &:hover {
                opacity: 0.8;
-             }
-            
-             &::before,
-             &::after {
+            }
+
+            &::before,
+            &::after {
                content: "";
                width: 30%;
                height: 10%;
                margin: auto;
-               
+
                background: #000;
                transform: rotate(45deg);
-            
+
                position: absolute;
                z-index: -1;
                top: 7.5%;
                left: -15%;
                right: 0;
                bottom: 0;
-             } 
+            }
 
-             &::before {
+            &::before {
                left: 15%;
                transform: rotate(315deg);
-             }
+            }
 
-             &:disabled {
-                background: #9b977a;
-                cursor: default;
-             }
+            &:disabled {
+               background: #9b977a;
+               cursor: default;
+            }
 
          }
 
@@ -288,12 +287,12 @@
 
             transform: rotate(90deg);
          }
-        
-         .btn-next {
-           margin-left: 5px;
 
-           transform: rotate(-90deg);
-        }
+         .btn-next {
+            margin-left: 5px;
+
+            transform: rotate(-90deg);
+         }
       }
    }
 }
@@ -608,19 +607,17 @@
 
             .testimonials-item {
 
-               .item-wrapper {
-                  
-                  .testimonials-text{
+               .testimonials-text {
 
-                     &::before {
-                        left: 0;
-                     }
+                  &::before {
+                     left: 0;
+                  }
 
-                     &::after {
-                        right: 0;
-                     }
+                  &::after {
+                     right: 0;
                   }
                }
+
             }
          }
       }
@@ -753,11 +750,11 @@
             .testimonials-item {
 
                .item-wrapper {
-                  
+
                   .testimonials-text {
                      margin-top: 90px;
                   }
-
+   
                   .testimonials-name {
                      margin: 55px 0 20px 0;
                   }
@@ -901,7 +898,7 @@
       .testimonials-container {
 
          .testimonials-track {
-            max-width: 350px;
+            max-width: 450px;
          }
       }
    }
