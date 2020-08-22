@@ -33,10 +33,11 @@
    align-items: center;
 
    .social-item {
-      max-width: 32px;
-      max-height: 33px;
-      color: #000;
+      max-width: 35px;
+      max-height: 35px;
 
+      align-content: center;
+      color: #000;
       fill: currentColor;
 
       &:hover {
